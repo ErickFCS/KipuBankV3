@@ -1,0 +1,7 @@
+#!/bin/bash
+
+forge install OpenZeppelin/openzeppelin-contracts
+forge install smartcontractkit/chainlink-evm
+forge install Uniswap/universal-router
+forge install Uniswap/v4-periphery
+forge install Uniswap/v4-core

@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = [
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+  "@chainlink/contracts/=lib/chainlink-evm/contracts/",
+  "@uniswap/universal-router/=lib/universal-router/",
+  "@uniswap/v4-periphery/contracts/=lib/v4-periphery/src/",
+  "@uniswap/v4-core/contracts/=lib/v4-core/src/",
+  "@uniswap/v4-core/src/=lib/v4-core/src/",
+  "@uniswap/permit2/contracts/=lib/permit2/src/",
+  "@uniswap/permit2/src/=lib/permit2/src/"
+]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

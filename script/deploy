@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# This command deploys the contract and attempts to verify it on Sepolia Etherscan.
+forge create src/KipuBankV3.sol:KipuBankV3 \
+    --rpc-url $SEPOLIA_RPC_URL \
+    --private-key $PRIVATE_KEY \
+    --chain-id 11155111 \
+    --verifier etherscan \
+    --verifier-url https://api-sepolia.etherscan.io/api \
+    --etherscan-api-key $ETHERSCAN_API_KEY \
+    --verify \
+    --via-ir \
+    --broadcast \
+    --constructor-args \
+    10000 \
+    1000000 \
+    0x694AA1769357215Ef4bE215cd2aa0325eE542AA5 \
+    0x685799797A263B9e525D973796d426D51A7F0450 \
+    0x000000000022d473030f116ddee9f6b43ac78ba3 \
+    0x1c7D4B196Cb0c7B01d743Fbc6116a902BC5AaF78
